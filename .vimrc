@@ -23,8 +23,9 @@ filetype plugin indent on
 """ Syntax highlighting
 syntax on
 
-""" Line numbers
+""" Line numbers and ruler
 set number
+set ruler                  
 
 """ Eyecandy
 set t_Co=256
@@ -47,6 +48,10 @@ cmap W w
 cmap Q q
 
 """ KeyBindings
+
+" Reselect visual block after in/dedent so we can in/dedent more
+vnoremap < <gv
+vnoremap > >gv
 
 """ Easier navigation between split windows
 nnoremap <c-j> <c-w>j
