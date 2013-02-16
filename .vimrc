@@ -81,3 +81,6 @@ autocmd BufReadPost *
 "filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+
+""" Python
+let g:pep8_map='<leader>8'
