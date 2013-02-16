@@ -77,6 +77,11 @@ autocmd BufReadPost *
       \     endif |
       \ endif
 
+""" Autocomplete using TAB
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
 """ Pathogen
 "filetype off
 call pathogen#runtime_append_all_bundles()
