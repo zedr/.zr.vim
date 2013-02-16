@@ -29,7 +29,8 @@ set ruler
 
 """ Eyecandy
 set t_Co=256
-""" colorscheme zenburn
+colorscheme zenburn
+set background=dark
 
 """ Incremental search
 set incsearch
@@ -77,6 +78,6 @@ autocmd BufReadPost *
       \ endif
 
 """ Pathogen
-filetype off
+"filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
