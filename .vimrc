@@ -34,6 +34,11 @@ set background=dark
 
 """ Incremental search
 set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+""" Set char to disable highlighting
+nmap \q :nohlsearch<CR>
 
 """ Max line length
 set textwidth=79
